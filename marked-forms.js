@@ -36,8 +36,8 @@ module.exports = function markedForms(opts) {
   }
 
   // markdown link syntax extension for forms
-  function link(href, title, text) {
-
+  function link({ href, title, text }) {
+    console.log('link', {href,title,text})
     var reLabelFirst = /^(.*?)\s*\?([^?\s]*)\?(\*?)(X?)(H?)(M?)$/;
     var reLabelAfter = /^\?([^?\s]*)\?(\*?)(X?)(H?)(M?)\s*(.*)$/;
 
